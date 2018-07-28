@@ -1,0 +1,8 @@
+#salut:
+  #   path: /saluez
+  #  controller: App\Controller\HelloController::salut
+
+etudiant:
+    path: /etude
+    controller: App\Controller\HelloController::etudiant
+

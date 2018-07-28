@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+
+   {% if eleves %}
+        {% for etudiant in eleves %}   
+            <tr>
+                <td> {{ eleve1 }} </td>
+                <td> {{ eleve2 }} </td>
+                <td> {{ eleve3 }} </td>
+                <td> {{ eleve4 }} </td>
+
+            </tr>
+
+        {% endfor %} 
+
+    {% else %}
+
+            <p> Message </p>
+    {% endif %}
+
+    </body>
+</html>
